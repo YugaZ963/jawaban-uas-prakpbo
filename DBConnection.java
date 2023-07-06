@@ -36,10 +36,10 @@ public class DBConnection {
             
             while (rs.next()) { // untuk menglooping setiap baris hasil query. 
                 int id = rs.getInt("id"); // var id di inisialisasi dengan nilai dari rs.getInt("id")
-                String todo = rs.getString("todo"); // var nama_barang di inisialisasi dengan nilai dari rs.getString("nama_barang")
-                String kategori = rs.getString("kategori"); // var harga di inisialisasi dengan nilai dari rs.getInt("harga")
-                String tanggal_selesai = rs.getString("tanggal_selesai"); // var ukuran di inisialisasi dengan nilai dari rs.getString("ukuran")
-                String status = rs.getString("status");
+                String todo = rs.getString("todo"); // var di inisialisasi dengan nilai dari rs.getString("todo")
+                String kategori = rs.getString("kategori"); // var di inisialisasi dengan nilai dari rs.getInt("kategori")
+                String tanggal_selesai = rs.getString("tanggal_selesai"); // var di inisialisasi dengan nilai dari rs.getString("tanggal_selesai")
+                String status = rs.getString("status"); // var di inisialisasi dengan nilai dari rs.getInt("status")
                 
                 // sebuah label yang menampilkan data dari database
                 System.out.println("To-Do-List \n==============\n" // sebuah label
